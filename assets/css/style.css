@@ -68,4 +68,18 @@ a.dwnl, #dl_icon{
 #music{
     height: 100vh;
     background-color: rgba(20, 25, 34, 1);
+    color: white;
+}
+/* album navbar */
+#music>nav>ul>li>a{
+    text-transform: uppercase;
+    color: white;
+    opacity: 0.5;
+}
+/* ALBUM section */
+.album_card{
+    text-align: center;
+}
+.album_card>img{
+    width: 100%;
 }
