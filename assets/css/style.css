@@ -4,7 +4,7 @@ body{
 }
 /* color */
 .bg_dblue{
-    background-color: rgba(8, 11, 18, 0.699);
+    background-color: rgba(8, 11, 18, 0.774);
 }
 /* HEADER STYLE */
 /* navbar style */
@@ -27,19 +27,45 @@ body{
     color: white;
     background-color: black;
 }
+#sidebar_menu a{
+    color: white;
+}
+/* logo style */
 .navbar-brand{
     margin-bottom: 10px;
 }
 #logo_lg{
     height: 30px;
 }
+/* main menu sidebar */
 #sidebar_menu ul li img{
     height: 25px;    
 }
-#sidebar_menu a{
-    color: white;
-}
+/* playlist menu */
 a.new_pl{
     opacity: 0.5;
     font-size: 14px;
+}
+/* install and profile */
+a.dwnl, #dl_icon{
+    opacity: 0.5;
+    font-size: 10px;
+}
+
+#sidebar_menu #dl_icon{
+    height: 20px;
+}
+#profile_icon{
+    background-color: grey;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+/* album section */
+#music{
+    height: 100vh;
+    background-color: rgba(20, 25, 34, 1);
 }
