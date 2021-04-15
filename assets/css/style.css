@@ -1,0 +1,45 @@
+/* common */
+body{
+    font-weight: 500;
+}
+/* color */
+.bg_dblue{
+    background-color: rgba(8, 11, 18, 0.699);
+}
+/* HEADER STYLE */
+/* navbar style */
+
+.sp_btn{
+    border: 1px solid white;
+    border-radius: 10rem;
+    padding: 5px 10px;
+}
+
+/* MAIN STYLE */
+/* sidebar style */
+#sidebar_menu{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2000;
+    height: 100vh;
+    color: white;
+    background-color: black;
+}
+.navbar-brand{
+    margin-bottom: 10px;
+}
+#logo_lg{
+    height: 30px;
+}
+#sidebar_menu ul li img{
+    height: 25px;    
+}
+#sidebar_menu a{
+    color: white;
+}
+a.new_pl{
+    opacity: 0.5;
+    font-size: 14px;
+}
