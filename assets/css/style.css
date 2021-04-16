@@ -2,7 +2,19 @@
 body{
     font-weight: 500;
 }
-/* color */
+.wrap_per{
+    height: 100vh;
+    width: 100%;
+}
+/* utility */
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.float_l{
+    float: left;
+}
 .bg_dblue{
     background-color: rgba(8, 11, 18, 0.774);
 }
@@ -18,21 +30,22 @@ body{
 /* MAIN STYLE */
 #sp_main{
     height: calc( 100vh - 52px);
+    overflow: hidden;
+}
+#sp_main::after{
+    content: "";
+    display:table;        clear: both;
 }
 /* sidebar style */
 #sidebar_menu{
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
     z-index: 2000;
-    /* height: 100vh; */
+    width: 200px;
+    height: 100%;
     color: white;
     background-color: black;
 }
-.sidebar-sticky{
+.zidebar{
     overflow: hidden;
-   height: calc(100vh - 52px);
 }
 #sidebar_menu a{
     color: white;
@@ -63,7 +76,6 @@ a.dwnl, #dl_icon{
     opacity: 0.5;
     font-size: 10px;
 }
-
 #sidebar_menu #dl_icon{
     height: 20px;
 }
@@ -76,11 +88,16 @@ a.dwnl, #dl_icon{
     justify-content: center;
     align-items: center;
 }
-/* album section */
+/* /sidebar style */
+
+/* MUSIC section */
 #music{
-     height: calc(100% - 100px);
+    height: 100%;
+    width: calc(100% - 200px);
     background-color: rgba(20, 25, 34, 1);
     color: white;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 /* album navbar */
 #music>nav>ul>li>a{
@@ -88,14 +105,17 @@ a.dwnl, #dl_icon{
     color: white;
     opacity: 0.5;
 }
+
 /* ALBUM section */
 .album_card{
     text-align: center;
+    width: 16.666%;
 }
 .album_card>img{
     width: 100%;
+    padding: 1rem;
 }
-
+/* /ALBUM section */
 
 /* FOOTER */
 .btm_bar{
