@@ -16,6 +16,9 @@ body{
 }
 
 /* MAIN STYLE */
+#sp_main{
+    height: calc( 100vh - 52px);
+}
 /* sidebar style */
 #sidebar_menu{
     position: fixed;
@@ -28,6 +31,7 @@ body{
     background-color: black;
 }
 .sidebar-sticky{
+    overflow: hidden;
    height: calc(100vh - 52px);
 }
 #sidebar_menu a{
@@ -48,6 +52,7 @@ body{
 .playlist_menu{
     height: 50%;
     flex-wrap: nowrap;
+    overflow-y: auto;
 }
 a.new_pl{
     opacity: 0.5;
