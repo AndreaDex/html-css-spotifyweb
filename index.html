@@ -34,7 +34,7 @@
             <div class="row">
                 <!-- sidebar -->
                 <nav id="sidebar_menu" class="col-lg-2 ">
-                    <div class="sidebar-sticky">
+                    <div class="sidebar-sticky d-flex flex-column">
                         <!-- logo -->
                         <a class="navbar-brand" href="#">
                             <img id="logo_lg" src="./assets/img/logo.svg"  alt="logo spotify">
@@ -65,7 +65,7 @@
                         <!-- /Main menu sidebar -->
 
                         <!-- playlist menu -->
-                        <ul class="nav flex-column">
+                        <ul class="nav flex-column playlist_menu">
                             <li class="nav-item">                                
                                 <h6>PLAYLIST</h6>
                             </li>
@@ -165,10 +165,13 @@
 
                     <!-- ALBUM -->
                     <!-- recent play section -->
-                    <div class="row recent_play">
+                    <div class="row recent_play py-4">
+                        <!-- titile -->
                         <div class="col-lg-12">
                             <h3>Recently played</h3>
                         </div>
+                        <!-- titile -->
+                        <!-- album gallery -->
                         <div class="col-lg-2">
                             <div class="album_card">
                                 <img src="./assets/img/metal_lifting.jpg" alt="vari album metal">
@@ -211,10 +214,62 @@
                                  <h6 class="card-subtitle text-muted">Subtitle</h6>
                              </div>
                         </div>
+                        <!-- album gallery -->
                     </div>
                     <!-- recent /play section -->
-                    
 
+                    <!-- creato per jd section -->
+                    <div class="row created py-4">
+                        <!-- title -->
+                        <div class="col-lg-12">
+                            <h3>Creato per John Doe </h3>
+                            <h5 class="text-muted">Più ascolti, più accurati saranno i suggerimenti</h5>
+                        </div>
+                        <!-- /title -->
+                        <!-- album gallety -->
+                        <div class="col-lg-2">
+                            <div class="album_card">
+                                <img src="./assets/img/radar.jpeg" alt="vari album metal">
+                                <h5 class="card-title">Heavy Metal</h5>
+                                <h6 class="card-subtitle text-muted">Subtitle</h6>
+                            </div>
+                        </div>
+                        <div class="col-lg-2">
+                            <div class="album_card">
+                                <img src="./assets/img/mixdaily.jpeg" alt="vari album metal">
+                                <h5 class="card-title">Heavy Metal</h5>
+                                <h6 class="card-subtitle text-muted">Subtitle</h6>
+                            </div>
+                        </div>
+                        <!--/album gallety -->
+                    </div>
+                    <!-- /creato per jd section -->
+
+                    <!-- popular artist -->
+                    <div class="row pop_art py-4">
+                        <!-- title -->
+                        <div class="col-lg-12">
+                            <h3>Artisti più Popolari </h3>
+                            <h5 class="text-muted">Più ascolti, più accurati saranno i suggerimenti</h5>
+                        </div>
+                        <!-- /title -->
+                        <!-- album gallety -->
+                        <div class="col-lg-2">
+                            <div class="album_card">
+                                <img class="rounded-circle" src="./assets/img/youg.jpeg" alt="vari album metal">
+                                <h5 class="card-title">Heavy Metal</h5>
+                                <h6 class="card-subtitle text-muted">Subtitle</h6>
+                            </div>
+                        </div>
+                        <div class="col-lg-2">
+                            <div class="album_card">
+                                <img class="rounded-circle" src="./assets/img/einaudi.jpeg" alt="vari album metal">
+                                <h5 class="card-title">Heavy Metal</h5>
+                                <h6 class="card-subtitle text-muted">Subtitle</h6>
+                            </div>
+                        </div>
+                        <!--/album gallety -->
+                    </div>
                 </div>
 
             </div>
@@ -223,6 +278,9 @@
       <!--/site main -->
       <!-- site footer -->
       <footer id="sp_footer">
+          <nav class="btm_bar ">
+
+          </nav>
 
       </footer>
       <!-- /site footer -->

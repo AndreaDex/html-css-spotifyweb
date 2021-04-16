@@ -23,9 +23,12 @@ body{
     bottom: 0;
     left: 0;
     z-index: 2000;
-    height: 100vh;
+    /* height: 100vh; */
     color: white;
     background-color: black;
+}
+.sidebar-sticky{
+   height: calc(100vh - 52px);
 }
 #sidebar_menu a{
     color: white;
@@ -42,6 +45,10 @@ body{
     height: 25px;    
 }
 /* playlist menu */
+.playlist_menu{
+    height: 50%;
+    flex-wrap: nowrap;
+}
 a.new_pl{
     opacity: 0.5;
     font-size: 14px;
@@ -66,7 +73,7 @@ a.dwnl, #dl_icon{
 }
 /* album section */
 #music{
-    height: 100vh;
+     height: calc(100% - 100px);
     background-color: rgba(20, 25, 34, 1);
     color: white;
 }
@@ -82,4 +89,16 @@ a.dwnl, #dl_icon{
 }
 .album_card>img{
     width: 100%;
+}
+
+
+/* FOOTER */
+.btm_bar{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 52px;
+    background-color: red;
+    z-index: 3000;
 }
