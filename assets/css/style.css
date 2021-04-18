@@ -26,6 +26,11 @@ body{
     border-radius: 10rem;
     padding: 5px 10px;
 }
+.sp_btn:hover{
+    transform: scale(1.2);
+    text-decoration: none;
+    cursor: pointer;
+}
 
 /* MAIN STYLE */
 #sp_main{
@@ -50,11 +55,19 @@ body{
 #sidebar_menu a{
     color: white;
 }
+#sidebar_menu a:hover{
+    color: white;
+    text-shadow: 0 0 5px white;
+    opacity: 1;
+}
 /* logo style */
 .navbar-brand{
     margin-bottom: 10px;
 }
-#logo_lg{
+.logo_lg{
+    height: 30px;
+}
+.logo_xs{
     height: 30px;
 }
 /* main menu sidebar */
@@ -63,7 +76,7 @@ body{
 }
 /* playlist menu */
 .playlist_menu{
-    height: 50%;
+    height: 52%;
     flex-wrap: nowrap;
     overflow-y: auto;
 }
@@ -74,7 +87,7 @@ a.new_pl{
 /* install and profile */
 a.dwnl, #dl_icon{
     opacity: 0.5;
-    font-size: 10px;
+    font-size: 12px;
 }
 #sidebar_menu #dl_icon{
     height: 20px;
@@ -105,16 +118,49 @@ a.dwnl, #dl_icon{
     color: white;
     opacity: 0.5;
 }
+#music>nav>ul>li>a:hover{
+    color: white;
+    text-shadow: 0 0 5px white;
+    opacity: 1;
+}
+#music>nav>ul>li:first-child:after{
+    content: "";
+    display: block;
+    height: 3px;
+    width: 60px;
+    background-color: rgba(173, 255, 47, 1);
+}
 
 /* ALBUM section */
 .recent_played{
     font-weight: bold;
 }
 .album_card{
+    position: relative;
     text-align: center;
     width: 16.666%;
 }
-.album_card>img{
+.overlay{
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    width: 86%;
+    height: 59%;
+    background-color: rgba(0, 0, 0, 0.601);
+    z-index: 2;
+    display: none;
+}
+.overlay>i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.album_card:hover .overlay{
+    display: block;
+}
+.album_card img{
+    position: relative;
     width: 100%;
     padding: 1rem;
 }
@@ -143,12 +189,25 @@ a.dwnl, #dl_icon{
 .ply_track_name{
     font-size: 10px;
 }
+.ply_track_name:hover{
+    text-decoration: underline;
+    color: white !important;
+    opacity: 1;
+    cursor: pointer;
+}
+.aa_player i:hover{
+    color: white !important;
+    cursor: pointer;
+}
 
 /* plyer style */
 .player_panel{
     display: flex;
     flex-flow: column;
     align-items: center;
+}
+.player_panel i.far.fa-play-circle:hover{
+    transform: scale(1.2);
 }
 .time_bar{
     display: inline-block;
@@ -181,4 +240,47 @@ a.dwnl, #dl_icon{
     height: 5px;
     background-color: rgba(255, 255, 255, 0.719);
     border-radius: 3px;
+}
+/* FOOTER */
+
+/* MEDIA QUERY  XS*/
+@media screen and (max-width: 575.98px){
+    /* utility class */
+    .xs_ninja{
+        display: none;
+    }
+    .mlxs{
+        margin-left: 29px;
+    }
+
+    /* sidebar_menu */
+    #sidebar_menu{
+        width: 60px;
+    }
+
+    /* MUSIC section */
+    /* album navbar */
+    #music{
+        width: calc(100% - 60px);
+    }
+    #arrow{
+        flex-flow: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #music nav.navbar ul.navbar-nav>li{
+        padding: 0 10px;
+    }
+
+    /* Album section */
+    #music h3{
+        margin-left: 29px;
+    }
+    .album_card{
+        text-align: center;
+        width: 50%;
+    }
+    .album_card>img{
+        width: 90%;
+    }
 }

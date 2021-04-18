@@ -30,8 +30,9 @@
             <nav id="sidebar_menu" class="d-flex float_l">
                 <div class="zidebar d-flex flex-column">
                     <!-- logo -->
-                    <a class="navbar-brand" href="#">
-                        <img id="logo_lg" src="./assets/img/logo.svg" alt="logo spotify">
+                    <a class="navbar-brand pl-3" href="#">
+                        <img class="logo_lg d-none d-sm-block" src="./assets/img/logo.svg" alt="logo spotify">
+                        <img class="logo_xs d-block d-sm-none " src="./assets/img/logo-small.svg" alt="logo spotify">
                     </a>
                     <!-- logo -->
 
@@ -40,28 +41,28 @@
                         <li class="nav-item">
                             <a class="nav-link" href="">
                                 <img src="./assets/img/home.svg" alt="icona home">
-                                Home
+                                <span class="xs_ninja">Home</span>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="">
                                 <img src="./assets/img/search.svg" alt="">
-                                Cerca
+                                <span class="xs_ninja">Cerca</span>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="">
                                 <img src="./assets/img/libreria.svg" alt="icona libreria">
-                                La Tua Libreria
+                                <span class="xs_ninja">La Tua Libreria</span>
                             </a>
                         </li>
                     </ul>
                     <!-- /Main menu sidebar -->
 
                     <!-- playlist menu -->
-                    <ul class="nav flex-column playlist_menu">
+                    <ul class="nav flex-column playlist_menu xs_ninja">
                         <li class="nav-item">
-                            <h6>PLAYLIST</h6>
+                            <h6 class="pl-3">PLAYLIST</h6>
                         </li>
                         <li class="nav-item">
                             <a href="" class="nav-link">
@@ -112,7 +113,7 @@
                         <li class="nav-item">
                             <a class="nav-link dwnl" href="">
                                 <img id="dl_icon" src="./assets/img/download.svg" alt="icon download">
-                                Installa app
+                                <span class="xs_ninja">Installa app</span>
                             </a>
                         </li>
                         <li class="nav-item">
@@ -120,7 +121,7 @@
                                 <div id="profile_icon">
                                     <img src="./assets/img/profile.svg" alt="icona home">
                                 </div>
-                                John Doe
+                                <span class="xs_ninja">John Doe</span>
                             </a>
                         </li>
 
@@ -132,13 +133,13 @@
             <!-- MUSIC section -->
             <div id="music" class="float_l">
                 <!-- upgrade navbar -->
-                <nav class="navbar bg_dblue justify-content-end">
-                    <a class="sp_btn text-white font-weight-bold">EFFETTUA L' UPGRADE</a>
+                <nav class="navbar p-3 bg_dblue justify-content-end">
+                    <a class="sp_btn text-white font-weight-bold mr-3">EFFETTUA L' UPGRADE</a>
                 </nav>
                 <!-- upgrade /navbar -->
                 <!-- album navbar -->
                 <nav class="navbar navbar-expand-sm justify-content-center">
-                    <ul class="navbar-nav">
+                    <ul id="arrow" class="navbar-nav">
                         <li class="nav-item">
                             <a class="nav-link" href="#">in evidenza</a>
                         </li>
@@ -165,12 +166,13 @@
                 <!-- recent play section -->
                 <div class="recent_played py-4">
                     <!-- titile -->
-                    <h3>Recently played</h3>
+                    <h3 class="pl-3">Recently played</h3>
                     <!-- titile -->
 
                     <!-- album gallery -->
                     <div class="d-flex flex-wrap flex-lg-nowrap recent_play py-2">
                         <div class="album_card">
+                            <div class="overlay"> <i class="far fa-play-circle fa-3x"></i></div>
                             <img src="./assets/img/metal_lifting.jpg" alt="vari album metal">
                             <h5 class="card-title">Heavy Metal</h5>
                             <h6 class="card-subtitle text-muted">Subtitle</h6>
@@ -213,8 +215,8 @@
                 <!-- creato per jd section -->
                 <div class="john_doe py-4">
                     <!-- title -->
-                    <h3>Creato per John Doe </h3>
-                    <h5 class="text-muted">Più ascolti, più accurati saranno i suggerimenti</h5>
+                    <h3 class="pl-3">Creato per John Doe </h3>
+                    <h5 class="text-muted mlxs pl-3">Più ascolti, più accurati saranno i suggerimenti</h5>
                     <!-- /title -->
                     <!-- album gallety -->
                     <div class="d-flex created py-2">
@@ -237,8 +239,8 @@
                 <!-- popular artist -->
                 <div class="popular_artist py-4">
                     <!-- title -->
-                    <h3>Artisti più Popolari </h3>
-                    <h5 class="text-muted">Più ascolti, più accurati saranno i suggerimenti</h5>
+                    <h3 class="pl-3">Artisti più Popolari </h3>
+                    <h5 class="text-muted mlxs pl-3">Più ascolti, più accurati saranno i suggerimenti</h5>
                     <!-- /title -->
                     <!-- album gallety -->
                     <div class="d-flex pop_art py-2">
@@ -291,7 +293,7 @@
                     </div>
                     <div class="player_time">
                         <span class="timer">0:25</span>
-                        <div class="time_bar">
+                        <div class="time_bar mx-3">
                             <div class="past_time"></div>
                         </div>
                         <span class="timer">4:35</span>
