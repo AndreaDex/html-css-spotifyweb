@@ -18,6 +18,9 @@ body{
 .bg_dblue{
     background-color: rgba(8, 11, 18, 0.774);
 }
+.l_bord{
+    border-left: 2px solid rgba(173, 255, 47, 1);
+}
 /* HEADER STYLE */
 /* navbar style */
 
@@ -74,6 +77,7 @@ body{
 #sidebar_menu ul li img{
     height: 25px;    
 }
+
 /* playlist menu */
 .playlist_menu{
     height: 52%;
@@ -113,6 +117,11 @@ a.dwnl, #dl_icon{
     overflow-x: hidden;
 }
 /* album navbar */
+#arrow{
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 #music>nav>ul>li>a{
     text-transform: uppercase;
     color: white;
@@ -128,6 +137,7 @@ a.dwnl, #dl_icon{
     display: block;
     height: 3px;
     width: 60px;
+    margin: auto;
     background-color: rgba(173, 255, 47, 1);
 }
 
@@ -221,6 +231,23 @@ a.dwnl, #dl_icon{
     height: 5px;
     background-color: rgba(255, 255, 255, 0.719);
     border-radius: 3px;
+    position: relative;
+}
+.player_time:hover .past_time{
+    background-color: rgba(173, 255, 47, 1);
+}
+.mini_cerchio{
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    display: none;
+    position: absolute;
+    top: -78%;
+    left: 81%;
+}
+.player_time:hover .mini_cerchio{
+    display: block;
 }
 .timer{
     font-size: 10px;
@@ -235,11 +262,28 @@ a.dwnl, #dl_icon{
     height: 5px;
     border-radius: 3px;
 }
+.volume_bar:hover .volume_lvl{
+    background-color: rgba(173, 255, 47, 1);
+}
 .volume_lvl{
     width: 15%;
     height: 5px;
     background-color: rgba(255, 255, 255, 0.719);
     border-radius: 3px;
+    position: relative;
+}
+.mini_cerchio_2{
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    display: none;
+    position: absolute;
+    top: -80%;
+    left: 90%;
+}
+.volume_bar:hover .mini_cerchio_2{
+    display: block;
 }
 /* FOOTER */
 
@@ -263,11 +307,7 @@ a.dwnl, #dl_icon{
     #music{
         width: calc(100% - 60px);
     }
-    #arrow{
-        flex-flow: row;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+    
     #music nav.navbar ul.navbar-nav>li{
         padding: 0 10px;
     }
@@ -282,5 +322,37 @@ a.dwnl, #dl_icon{
     }
     .album_card>img{
         width: 90%;
+    }
+    .album_card h5{
+        font-size: 14px;
+    }
+    .album_card h6{
+        font-size: 12px;
+    }
+    /* FOOTER */
+    #sp_footer i{
+        font-size: 12px;
+    }
+}
+
+/* MEDIA QUERY S */
+@media  screen and (min-width: 576px) and (max-width: 767.98px) {
+    /* Album section */
+    .album_card{
+        text-align: center;
+        width: 50%;
+    }
+    .album_card h5{
+        font-size: 20px;
+    }
+    .album_card h6{
+        font-size: 18px;
+    }
+}
+
+@media  screen and (min-width: 768px) and (max-width: 991.98px){
+    .album_card{
+        text-align: center;
+        width: 25%;
     }
 }
