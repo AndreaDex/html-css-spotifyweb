@@ -287,7 +287,7 @@ a.dwnl, #dl_icon{
 }
 /* FOOTER */
 
-/* MEDIA QUERY  XS*/
+/* MEDIA QUERY  XS SCREEN*/
 @media screen and (max-width: 575.98px){
     /* utility class */
     .xs_ninja{
@@ -330,12 +330,25 @@ a.dwnl, #dl_icon{
         font-size: 12px;
     }
     /* FOOTER */
-    #sp_footer i{
-        font-size: 12px;
+    #sp_footer i:not(.far.fa-play-circle){
+        font-size: 13px;
+        padding: 5px !important;
     }
+    .aa_play_icon{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .time_bar{
+        width: 100px;
+    }
+    .volume_bar{
+        width: 50px;
+    }
+
 }
 
-/* MEDIA QUERY S */
+/* MEDIA QUERY S SCREEN*/
 @media  screen and (min-width: 576px) and (max-width: 767.98px) {
     /* Album section */
     .album_card{
@@ -348,8 +361,27 @@ a.dwnl, #dl_icon{
     .album_card h6{
         font-size: 18px;
     }
+
+    /* footer */
+    #sp_footer i{
+        padding: 8px;
+    }
+    .aa_play_icon{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .time_bar{
+        width: 160px;
+    }
+    .volume_bar{
+        width: 70px;
+    }
 }
 
+
+/* MEDIA QUERY MD SCREEN */
 @media  screen and (min-width: 768px) and (max-width: 991.98px){
     .album_card{
         text-align: center;
