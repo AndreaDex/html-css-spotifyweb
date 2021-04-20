@@ -1,3 +1,4 @@
+
 /* common */
 body{
     font-weight: 500;
@@ -20,11 +21,6 @@ body{
 }
 .l_bord{
     border-left: 2px solid rgba(173, 255, 47, 1);
-}
-
-/* scrollbar */
-::-webkit-scrollbar-track{
-    border-radius: 10px;
 }
 
 /* HEADER STYLE */
